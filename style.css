@@ -1,0 +1,65 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+body
+{
+    background-color: black;
+}
+
+.form-container
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 45px;
+    background-color: #fab608;
+    color: white;
+    border-radius: 8px;
+    transition: width .6s;
+}
+.search :is(input, button) {
+    background-color: #fab608;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+.search__input {
+    width: 0;
+    height: 45px;
+    margin-left: 10px;
+    transition: width .6s;
+}
+.search__btn {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 10px 10px 10px 0;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+.search:hover, .search:hover input {
+    width: 300px;
+}
+.search__input::placeholder {
+    color: inherit;
+}
+.search__btn span {
+    width: 25px;
+    height: 25px;
+    background-image: url("./assets/search-icon-dannmacode.png");
+    background-size: cover;
+    background-position: center;
+}
